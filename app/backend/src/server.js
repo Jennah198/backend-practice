@@ -1,5 +1,7 @@
+
 const express = require("express");
 const pool = require("./db");
+const eventRoutes = require("./routes/eventRoutes");
 
 const app = express();
 
@@ -21,6 +23,8 @@ app.get("/health", async (req, res) => {
     });
   }
 });
+
+app.use("/api/events", eventRoutes);
 
 const PORT = 3000;
 
