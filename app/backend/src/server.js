@@ -28,6 +28,10 @@ app.use("/api/events", eventRoutes);
 
 const PORT = 3000;
 
-app.listen(PORT, () => {
-  console.log(`EventPulse API running on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`EventPulse API running on port ${PORT}`);
+  });
+}
+
+module.exports = app;
