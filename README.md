@@ -5,4 +5,4 @@ A collection of backend practice projects.
 | Project | Description |
 | --- | --- |
 | [docker-practice](./docker-practice) | Containerized Express API using PostgreSQL, Redis, and Docker Compose |
-| [eventpulse](./eventpulse) | EventPulse |
+| [eventpulse](./eventpulse) | PostgreSQL performance study: how an event-log database behaves from 1M to 100M rows |
